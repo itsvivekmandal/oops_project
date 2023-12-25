@@ -1,0 +1,15 @@
+# /var/www/html/opps_project/.htaccess
+
+Options -Indexes
+RewriteEngine On
+RewriteBase /oops_project/
+
+# RewriteRule ^test$ index1.php?controller=$1 [QSA,L]
+# RewriteRule ^(.*)$ index1.php [L]
+# RewriteRule ^(.+)$ index.php?controller=$1&action=$2&id=$3 [QSA,L]
+
+# RewriteRule ^([^/]+)?/?([^/]+)?/?([^/]+)?$ index1.php?controller=$1&action=$2&id=$3 [QSA,L]
+RewriteRule ^([^/]*)?/?([^/]*)?/?([^/]*)?$ index.php?controller=$1&action=$2&id=$3 [QSA,L]
+
+
+
