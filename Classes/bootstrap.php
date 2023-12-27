@@ -40,6 +40,7 @@ class Bootstrap {
       }
     } else {
       // Controller Class does not exist
+      echo $this->controller;
       echo '<h1>Controller Class does not exist</h1>';
       return;
     }
